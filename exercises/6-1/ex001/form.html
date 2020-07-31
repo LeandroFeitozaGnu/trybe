@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <div class="container">
+    <fieldset>
+    <legend> Dados Pessoais</legend>
+    <div class="name-candidate">
+      <label for="name"> Nome Completo: </label>
+      <input type="text" name="name" id="name" maxlength="40" placeholder="Digite seu nome" required>
+    </div>
+    <div class="email-candidate">
+      <label for="email"> E-mail</label>
+      <input type="text" name="email" id="email" maxlength="50" placeholder="Digite seu e-mail" required>
+    </div>
+    <div class="cpf-candidate">
+      <label for="cpf"> CPF </label>
+      <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="XXX.XXX.XXX-XX" required>
+    </div>
+    <div class="address-candidate">
+      <label for="endereco"> Endereço </label> 
+      <input type="text" name="endereco" id="endereco" maxlength="200" required>
+    </div>
+    <div class="city-candidate">
+      <label for="cidade">Cidade</label>
+      <input type="text" name="cidade" id="cidade" maxlength="28" required>
+    </div>
+    <div class="state-candidate">
+      <label for="estado"> Escolha seu Estado</label>
+      <select name="estado" id=estado>
+      </select>
+      <label for="tipo"> Tipo </label>
+      <input type="radio" name="tipo" id="tipo">      
+    </div>
+  </fieldset>
+    <fieldset>
+      <legend> Dados Profissionais </legend>
+      <div class="resumo-cv">
+        <label for="resumo-cv"> Resumo do Curriculo </label>
+        <textarea name="resumo-cv" id="resumo-cv" cols="50" rows="10" maxlength="1000" required></textarea>
+      </div>
+      <div class="cargo">
+        <label for="cargo"> Cargo </label>
+        <input type="text" name="cargo" id="cargo" maxlength="40" required>
+      </div>
+      <div class="description">
+        <label for="descricao"> Descrição do Cargo </label>
+        <input type="text" name="descricao" id="descricao" maxlength='500' 
+        required>
+      </div>
+      <div>
+        <label for="data-inicio"></label>
+        <input type="text" name="data-inicio" id="data-inicio" required>
+      </div>
+   </fieldset>
+  </div>
+</body>
+</html>
