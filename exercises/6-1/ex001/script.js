@@ -3,7 +3,7 @@ function checkEmail() {
     || document.forms[0].email.value.indexOf('@') == -1
      || document.forms[0].email.value.indexOf('.') == -1)
       {
-        alert( 'Por favor digite um email válido: email@dominio.com');
+        console.log( 'Por favor digite um email válido: email@dominio.com');
         return false;
       }
 }
