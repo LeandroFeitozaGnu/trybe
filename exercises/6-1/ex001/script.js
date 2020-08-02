@@ -88,3 +88,34 @@ for (i = 0; i<= arraySiglas.length -1; i += 1) {
 for(i = 0; i <= arrayEstados.length - 1; i += 1) {
  document.querySelectorAll('option')[i].innerHTML = arrayEstados[i]
 }
+
+
+var data = '40/05/2016'
+
+var dia = data.substring(0 , 2)
+var mes = data.substring(3 , 5)
+var ano = data.substring(6 , 11)
+now = new Date
+anoAtual = now.getFullYear()
+
+if ((dia.length == 2) && (dia > 0) && (dia <= 31)) {
+  dia = dia + '/'
+} else {
+  console.log('digite uma data válida')
+}
+if ((mes.length == 2) && (mes > 0) && (mes <= 12)) {
+  mes = mes + '/'
+} else {
+  console.log('Digite uma data válida')
+}
+ if ((ano > 0 ) && (ano < anoAtual)) {
+  console.log
+ } else {
+   
+ }
+  
+
+
+console.log(dia + mes + ano)
+
+console.log(anoAtual)
