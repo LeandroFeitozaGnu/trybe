@@ -18,26 +18,29 @@
         <input type="text" name="name" id="name" maxlength="40" placeholder="Digite seu nome" required onblur="checkEmail();">
         <label for="email"> E-mail</label>
         <input type="text" name="email" id="email" maxlength="50" placeholder="Digite seu e-mail" required >
-        <label for="cpf"> CPF </label>
+        <label for="cpf"> CPF </label> <br>
         <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="XXX.XXX.XXX-XX" required onkeypress="return onlyNumber(event)">
         <label for="endereco"> Endereço </label> 
         <input type="text" name="endereco" id="endereco" maxlength="200" required>
-        <label for="cidade">Cidade</label>
+        <label for="cidade">Cidade</label> <br>
         <input type="text" name="cidade" id="cidade" maxlength="28" required>
         <label for="estado"> Escolha seu Estado</label>
-        <select name="estado" id=estado>
-        <label for="tipo"> Tipo </label>
-        <input type="radio" name="tipo" id="tipo">      
-    </div>
-    </fieldset>
+        <select name="estado" id=estado> </select>  
+        <label for="casa"> Casa </label>
+        <input type="radio" name="casa" id="casa">
+        <label for="apto"> Apartamento </label>
+        <input type="radio" name="apto" id="apto">
+      </fieldset>
+
       <fieldset> <legend> Dados Profissionais </legend>
-      <label for="resumo-cv"> Resumo do Curriculo </label>
-      <textarea name="resumo-cv" id="resumo-cv" cols="50" rows="10" maxlength="1000" required></textarea>
-      <label for="cargo"> Cargo </label>
-      <input type="text" name="cargo" id="cargo" maxlength="40" required>
-      <label for="descricao"> Descrição do Cargo </label>
-      <input type="text" name="descricao" id="descricao" maxlength='500' required>
-        <label for="data-inicio"></label>
+        <label for="resumo-cv"> Resumo do Curriculo </label>
+        <textarea name="resumo-cv" id="resumo-cv" cols="100" rows="10" maxlength="1000" required>
+        </textarea> <br>
+        <label for="cargo"> Cargo </label>
+        <input type="text" name="cargo" id="cargo" maxlength="40" required> <br>
+        <label for="descricao"> Descrição do Cargo </label>
+        <input type="text" name="descricao" id="descricao" maxlength='500' required>
+        <label for="data-inicio"> Data de Inicio </label>
         <input type="text" name="data-inicio" id="data-inicio" required>
     </fieldset>
       <input name="submit" type="submit" value=" ENVIAR " />
