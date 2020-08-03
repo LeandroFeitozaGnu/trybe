@@ -2,22 +2,19 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
   <title>Formulario</title>
   <link rel="stylesheet" href="./css/bulma.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header class="cabecalho">
-    <h1 class="title"> Trabalhe Conosco </h1>
-    <p class="subtitle"><em> Cadastre seu Curriculo </em></p>
+    <div class="container has-text-centered">
+      <h1 class="title"> Trabalhe Conosco </h1>
+      <p class="subtitle"><em> Cadastre seu Curriculo </em></p>
+    </div>
   </header>
-
   <form action="" method="get" target="_self">
-
-
-      <fieldset> <legend> Dados Pessoais</legend>
-
   <div class="field">
     <label class='label' for="name"> Nome Completo: </label>
     <div class='control'>
@@ -57,44 +54,52 @@
       </div>
     </div>
   </div>
+  <div class="field">
+    <div class="control">
+      <label class="radio" for="casa"> Casa </label>
+      <input type="radio" name="casa" id="casa">
+      </label>
+      <label class="radio" for="apto"> Apartamento </label>
+      <input type="radio" name="apto" id="apto">
+      </label>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="resumo-cv"> Resumo do Curriculo </label>
+    <div class="control">
+      <textarea class="textarea has-fixed-size" name="resumo-cv" id="resumo-cv" cols="100" rows="10" maxlength="1000" required>
+      </textarea>      
+    </div>    
+  </div>  
+  <div class="field">
+    <label class="label" for="cargo"> Cargo </label>
+    <div class="control">
+      <input class="input" type="text" name="cargo" id="cargo" maxlength="40" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="descricao"> Descrição do Cargo </label>
+    <div class="control">
+      <input class="input" type="text" name="descricao" id="descricao" maxlength='500' required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="data-inicio"> Data de Inicio </label>
+    <div class="controle">
+      <input class="input" type="text" name="data-inicio" id="data-inicio" required>
+    </div>
+  </div>
 
-       
-        
-       
-        
-        
-       
-        
-        
-        
-        
-        
-         
-        <label for="casa"> Casa </label>
-        <input type="radio" name="casa" id="casa">
-        <label for="apto"> Apartamento </label>
-        <input type="radio" name="apto" id="apto">
-      </fieldset>
-
-      <fieldset> <legend> Dados Profissionais </legend>
-        <label for="resumo-cv"> Resumo do Curriculo </label>
-        <textarea name="resumo-cv" id="resumo-cv" cols="100" rows="10" maxlength="1000" required>
-        </textarea> <br>
-        <label for="cargo"> Cargo </label>
-        <input type="text" name="cargo" id="cargo" maxlength="40" required> <br>
-        <label for="descricao"> Descrição do Cargo </label>
-        <input type="text" name="descricao" id="descricao" maxlength='500' required>
-        <label for="data-inicio"> Data de Inicio </label>
-        <input type="text" name="data-inicio" id="data-inicio" required>
-    </fieldset>
-      
-      <button type="submit"> Enviar! </button>
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-link">Submit</button>
+    </div>
+    <div class="control">
+      <button class="button is-link is-light">Cancel</button>
+    </div>
+  </div>
   </form>
-  
-
   <div class='target'></div>
-  
-
   <script src="./script.js"></script>
 </body>
 </html>
