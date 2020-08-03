@@ -36,6 +36,27 @@
       <input class="input" type="text" name="cpf" id="cpf" maxlength="11" placeholder="XXX.XXX.XXX-XX" required onkeypress="return onlyNumber(event)">
     </div>
   </div>
+  <div class="field">
+    <label class="label" for="endereco"> Endereço </label>
+    <div class="control">
+      <input class="input" type="text" name="endereco" id="endereco" maxlength="200" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="cidade">Cidade</label>
+    <div class='control'>
+      <input class="input" type="text" name="cidade" id="cidade" maxlength="28" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="estado"> Escolha seu Estado</label>
+    <div class="control">
+      <div class="select">
+        <select name="estado" id=estado>
+        </select>
+      </div>
+    </div>
+  </div>
 
        
         
@@ -43,12 +64,12 @@
         
         
        
-        <label for="endereco"> Endereço </label> 
-        <input type="text" name="endereco" id="endereco" maxlength="200" required>
-        <label for="cidade">Cidade</label> <br>
-        <input type="text" name="cidade" id="cidade" maxlength="28" required>
-        <label for="estado"> Escolha seu Estado</label>
-        <select name="estado" id=estado> </select>  
+        
+        
+        
+        
+        
+         
         <label for="casa"> Casa </label>
         <input type="radio" name="casa" id="casa">
         <label for="apto"> Apartamento </label>
