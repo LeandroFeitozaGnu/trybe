@@ -113,9 +113,12 @@ if ((mes.length == 2) && (mes > 0) && (mes <= 12)) {
  } else {
    
  }
-  
-
-
+ 
 console.log(dia + mes + ano)
 
 console.log(anoAtual)
+
+
+let div = document.createElement('div')
+div.id='recebe-form'
+document.body.appendChild(div)

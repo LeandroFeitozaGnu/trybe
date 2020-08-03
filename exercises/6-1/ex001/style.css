@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
     padding: 5px;
 }
@@ -12,7 +13,6 @@
 }
 
 .container{
-    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     width: 80%;
     margin-left: auto;
@@ -21,12 +21,11 @@
 }
 
 input[name=name], input[name=email],input[name=endereco] {
-    display: inline-block;
     width: 100%;
 }
 
 input[name=cidade] {
-    width: 70%;
+    width: 30%;
 }
 
 input[name=cargo] {
@@ -37,27 +36,28 @@ fieldset {
     padding: 30px;
 }
 
-
-
-textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    resize: none;
+input:focus, textarea:focus {
+    border-color: #000;
+    background-color: rgb(224, 228, 233);
 }
 
-.endereco {
-    width: 50%;
+input, textarea {
+    font: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
 
+textarea {
+    resize: none;
 }
 
 .cidade {
    width: 45%;
     float: left;
 }
-.estado {
-   
+.estado {   
     float: right;
-    margin-right: 100px;
+    margin-right: 10px;
 }
 
 .tipo {
