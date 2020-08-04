@@ -14,11 +14,11 @@
       <p class="subtitle"><em> Cadastre seu Curriculo </em></p>
     </div>
   </header>
-  <form action="" method="get" target="_self">
+  <form id="form" action="" method="GET" onsubmit="pegaDados()" >
   <div class="field">
     <label class='label' for="name"> Nome Completo: </label>
     <div class='control'>
-      <input class="input" type="text" name="name" id="name" maxlength="40" placeholder="Digite seu nome" required onblur="checkEmail();">
+      <input class="input" type="text" name="name" id="name" maxlength="40" placeholder="Digite seu nome" >
     </div>
   </div>
   <div class="field">
@@ -30,7 +30,7 @@
   <div class='field'>
     <label class="label" for="cpf"> CPF </label>
     <div class="control">
-      <input class="input" type="text" name="cpf" id="cpf" maxlength="11" placeholder="XXX.XXX.XXX-XX" required onkeypress="return onlyNumber(event)">
+      <input class="input" type="text" name="cpf" id="cpf" maxlength="11" placeholder="XXX.XXX.XXX-XX" required >
     </div>
   </div>
   <div class="field">
@@ -96,10 +96,12 @@
     </div>
     <div class="control">
       <button class="button is-link is-light">Cancel</button>
+      
     </div>
   </div>
+  <button class="teste"> Teste </button>
   </form>
   <div class='target'></div>
-  <script src="./script.js"></script>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
