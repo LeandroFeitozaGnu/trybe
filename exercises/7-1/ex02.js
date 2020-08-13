@@ -1,23 +1,17 @@
-/*
-function fator() {
-    let number = 5;
-    let result = 1
-    for(i = 1; i <= number; i ++) {
-        result *= i;
-    }
-    return  result
-}
-*/
-//console.log(fator())
+//longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")  retorna 'aconteceu'
 
+const longestWord = text => {
+    let wordArray = text.split(' '); 
+    let maxLength = 0;
+    let result = '';
 
-
-let fatoracao = number => {
-    let result = 1
-    for(let i = 1; i <= number; i += 1) {
-        result *= i;
+    for (const word of wordArray) {
+        if (word.length > maxLength) {
+            maxLength = word.length
+            result = word
+        }
     }
     return result
-} 
+}
 
-console.log(fatoracao(6))
+console.log(longestWord("Antonio foi no banheiro e não sabemos o que aconteceu"))

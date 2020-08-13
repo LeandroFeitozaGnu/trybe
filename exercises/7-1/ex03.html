@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <header>
+        <h1> Exercicio - 3 </h1>
+    </header>
+    <section>
+        <div>
+            <button type="button"> Click Me!!!!</button>
+            <input type="text" name="receive-count" id="receive-count" disabled>
+        </div>
+    </section>
+    <script>
+        let clickCount = 0;
+        let inputResultClick = document.querySelector('#receive-count')
+        document.querySelector('button').addEventListener('click', () => {
+            clickCount += 1;
+            inputResultClick.value = clickCount
+        });        
+    </script>
+</body>
+</html>
