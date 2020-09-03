@@ -22,6 +22,6 @@ describe('Testa a implantação da função FizzBuzz', () => {
     it('Testa se não for passado um número, se retorno é o esperado', () => {
         const num = '5';
         myFizzBuzz(num);
-        expect(myFizzBuzz(num)).toBe(false)
+        expect(myFizzBuzz(num)).toBeFalsy()
     });
 })
