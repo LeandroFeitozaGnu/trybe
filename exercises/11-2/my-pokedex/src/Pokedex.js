@@ -6,16 +6,16 @@ import PropTypes from 'prop-types'
 
 class Pokedex extends Component {
   render() {
-    console.log(pokemons[0].averageWeight.value)
+    
     return (
       
       <div className='content'>
-         <h1> Pokedex </h1>
+        <header><h1> Pokedex </h1></header> 
       {pokemons.map((pokemon, index) => {
         return (
          
-          <div className={'pokemon'+index}>
-            <br />
+          <div className={'pokemon'}>
+            
           <div className='pokemon-card'>
           < Pokemon
             name={pokemon.name}
