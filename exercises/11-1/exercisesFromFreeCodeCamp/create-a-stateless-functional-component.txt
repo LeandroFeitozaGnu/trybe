@@ -1,0 +1,9 @@
+const MyComponent = function() {
+  return (
+    <div> Some String </div>
+
+  )
+    
+  
+
+}
