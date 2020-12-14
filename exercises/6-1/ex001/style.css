@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+.cabecalho {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.container{
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+input[name=name], input[name=email],input[name=endereco] {
+    width: 100%;
+}
+
+input[name=cidade] {
+    width: 30%;
+}
+
+input[name=cargo] {
+    width: 60%;
+}
+
+fieldset {
+    padding: 30px;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+    background-color: rgb(224, 228, 233);
+}
+
+input, textarea {
+    font: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+.cidade {
+   width: 45%;
+    float: left;
+}
+.estado {   
+    float: right;
+    margin-right: 10px;
+}
+
+.tipo {
+    display: block;
+    float: left;
+}
+
+
